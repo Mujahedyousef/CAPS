@@ -3,17 +3,9 @@
 const eventEmitter = require('./lib/events')
 
 
- require('./app/driver');
+require('./app/driver');
 require("./app/vendor");
 
 setInterval(() => {
-  eventEmitter.emit('createOrder');
+  eventEmitter.emit('crateOrder');
 }, 9000)
-
-// setInterval(()=>{
-//   eventEmitter.emit('inTtransit', EVENT.payload);
-// },2000)
-
-// setInterval(()=>{
-//   eventEmitter.emit('delivered', EVENT.payload);
-// },3000)
