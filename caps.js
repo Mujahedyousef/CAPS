@@ -1,11 +1,11 @@
 'use strict';
 
-const eventEmitter = require('./lib/events')
+const eventEmitter = require("./lib/events")
 
 
-require('./app/driver');
+require("./app/driver");
 require("./app/vendor");
 
 setInterval(() => {
-  eventEmitter.emit('crateOrder');
+  eventEmitter.emit("createOrder");
 }, 9000)
